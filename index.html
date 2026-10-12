@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ананасовый улун — Teaboom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <article class="product">
+      <figure class="product__gallery">
+        <img
+          class="product__image"
+          src="img/product-1.jpg"
+          alt="Ананасовый улун: сухой лист с цукатами"
+          width="640"
+          height="640"
+        >
+      </figure>
+
+      <div class="product__body">
+        <p class="product__category">Китайский светлый ароматизированный улун</p>
+        <h1 class="product__title">Ананасовый улун</h1>
+
+        <form class="product__form" id="product-form">
+          <fieldset class="packs">
+            <legend class="packs__legend">Фасовка</legend>
+            <div class="packs__list">
+              <label class="pack">
+                <input
+                  class="pack__input"
+                  type="radio"
+                  name="pack"
+                  value="100"
+                  checked
+                  data-sku="01306"
+                  data-price="326.4"
+                  data-old-price="349.2"
+                >
+                <span class="pack__label">100 г</span>
+              </label>
+              <label class="pack">
+                <input
+                  class="pack__input"
+                  type="radio"
+                  name="pack"
+                  value="500"
+                  data-sku="01307"
+                  data-price="1432"
+                  data-old-price="1646"
+                >
+                <span class="pack__label">500 г</span>
+              </label>
+              <label class="pack">
+                <input
+                  class="pack__input"
+                  type="radio"
+                  name="pack"
+                  value="1000"
+                  data-sku="01308"
+                  data-price="2064"
+                  data-old-price="2592"
+                >
+                <span class="pack__label">1000 г</span>
+              </label>
+              <label class="pack">
+                <input
+                  class="pack__input"
+                  type="radio"
+                  name="pack"
+                  value="5000"
+                  data-sku="01309"
+                  data-price="6320"
+                  data-old-price="8710"
+                >
+                <span class="pack__label">5000 г</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <p class="product__sku">арт. <span id="product-sku">01306</span></p>
+
+          <div class="product__purchase">
+            <p class="price" aria-live="polite">
+              <s class="price__old" id="product-old-price">349,20 ₽</s>
+              <span class="price__current" id="product-price">326,40 ₽</span>
+            </p>
+            <button class="cart-button" type="button">В корзину</button>
+          </div>
+        </form>
+
+        <section class="product__description" aria-labelledby="description-title">
+          <h2 class="product__description-title" id="description-title">О товаре</h2>
+          <p>
+            Состав: китайский бирюзовый чай, цукаты, натуральные ароматические масла.
+            Светлый фуцзяньский улун с ароматом ананаса: крупный изумрудный лист
+            и прозрачный светло-янтарный настой с яркой ананасовой нотой.
+          </p>
+        </section>
+      </div>
+    </article>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
